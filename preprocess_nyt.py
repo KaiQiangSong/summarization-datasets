@@ -35,7 +35,7 @@ def get_article_text(xml):
 
 def init_worker():
     global nlp
-    nlp = spacy.load('en', parser=False)
+    nlp = spacy.load('en_core_web_trf')
 
 def prepare_example(article_text, abstract_text, ol_text, doc_id, sections):
     global nlp
